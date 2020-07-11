@@ -11,7 +11,7 @@ a{
 img:hover {
   animation: ease-in-out 8s;
   transform: scale(1.5);
-  transition-delay:1s;
+  /*transition-delay:1s;*/
 
 }
 @keyframes bounce {
