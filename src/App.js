@@ -1,5 +1,5 @@
 
-import { Redirect, Link, Route, Switch } from "react-router-dom";
+import { Redirect, Link, Route, Switch, HashRouter } from "react-router-dom";
 import Search from "./Search";
 import Science from "./Science";
 import Homepage from "./Home";
@@ -37,13 +37,13 @@ export default function App() {
       </nav>
 
       <Switch>
-          <Route path="/home" component={Homepage} />
-        <Route path="/login" component={Login} />
-        <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/login" component={Login} />
         <Route path="/search" component={Search} />
         <PrivateRoute path="/admin" component={Admin} />
         <Route path="/science" component={Science} />
       </Switch>
+
     </div>
   );
 }

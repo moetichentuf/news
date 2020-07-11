@@ -7,7 +7,7 @@ function Home() {
 
     useEffect(() => {
         // GET request using fetch inside useEffect React hook
-        fetch('https://api.nytimes.com/svc/topstories/v2/science.json?api-key='+apiKey)
+        fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key='+apiKey)
             .then(response => response.json())
             .then(data => setTotalReactPackages(data.results));
 
